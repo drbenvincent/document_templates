@@ -1,0 +1,36 @@
+\documentclass{article}
+
+\include{preamble}
+
+% This allows you to refer to labels in the external document
+\usepackage{xr}
+\externaldocument{paper}
+
+
+
+\title{Supplementary Material\\for\\My lovely paper}
+\include{author_vincent}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Some supplementary thing}
+
+This is a reference to Equation~\ref{eq1} 
+
+This is a reference to a paper \citep{Vincent:2004ul}
+
+Here is a new equation just in the supplementary material \ldots
+
+\begin{equation}
+\label{eq_thing}
+  a = b + c
+\end{equation}
+
+
+\bibliographystyle{apacite}
+\bibliography{my_references}
+
+\end{document}

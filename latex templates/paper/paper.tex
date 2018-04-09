@@ -1,0 +1,44 @@
+\documentclass[12pt, a4paper]{article}
+
+\include{preamble}
+\usepackage{lipsum} % <---------- remove me
+
+\title{My lovely paper}
+\include{author_vincent}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Short introduction to subject of the paper \ldots
+\end{abstract}
+
+\section{Introduction}
+This is a reference \citep{Vincent:2015dh}
+
+\lipsum[1-2] % <---------- remove me
+
+\begin{equation}
+\label{eq1}
+  y = mx+c
+\end{equation}
+
+\lipsum[2] % <---------- remove me
+
+\begin{figure}[t!] 
+	\centering
+	\includegraphics[]{bayes_net_general.pdf} 
+	\caption{This is a caption}
+	\label{fig:first_figure}
+\end{figure}
+
+\lipsum[3-5] % <---------- remove me
+
+% REFERENCE SECTION
+\clearpage
+\bibliographystyle{apacite}
+\bibliography{my_references}
+
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\include{preamble}
+
+% This allows you to refer to labels in the external document
+\usepackage{xr}
+\externaldocument{supplementary}
+
+\title{My lovely paper}
+\include{author_vincent}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Short introduction to subject of the paper \ldots
+\end{abstract}
+
+\section{Introduction}
+This is a reference \citep{Vincent:2015dh}
+
+\begin{equation}
+\label{eq1}
+  y = mx+c
+\end{equation}
+
+If you like equations you can see Equation~\ref{eq_thing} in the Supplementary Material.
+
+
+\bibliographystyle{apacite}
+\bibliography{my_references}
+
+\end{document}
